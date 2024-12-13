@@ -1,0 +1,16 @@
+Current todo list
+* Fix !say
+* Fix error message with !trivia/!quiz
+* Change Giphy API key when full use one is available (ongoing)
+* Fix /remind slash command not showing up
+* Fix /uptime slash command not showing up
+* Fix maxlisteners error
+* Fix errors that show up
+* Add a currency system (do this last due to the amount of planning needed)
+* Create backups (ongoing)
+* Setup Database (ongoing)
+* Add the ability to search for songs via only text
+* Fix and make the start.bat used on auto restarts
+
+
+Currently the fix and tweak for the auto restart is in an Aplha Phase...
