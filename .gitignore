@@ -1,8 +1,2 @@
-# Ignore environment variable file
-.env
-
-# Ignore the specific config file
-config.json
-other/allowed.txt
-error.log
+#Later
 node_modules

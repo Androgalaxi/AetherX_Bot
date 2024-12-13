@@ -1,0 +1,32 @@
+[2024-12-12T05:41:46.186Z] Error executing command: uptime TypeError: Cannot read properties of undefined (reading 'uptime')
+[2024-12-12T12:45:03.299Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:46:10.850Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:46:34.673Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:46:43.813Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:46:59.826Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:47:13.897Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:47:32.268Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:47:52.997Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:48:07.699Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T12:48:41.904Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T13:09:10.925Z] Error executing command: uptime TypeError: Cannot read properties of undefined (reading 'uptime')
+[2024-12-12T13:13:00.549Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T13:16:37.451Z] (node:18756) TimeoutOverflowWarning: 2383699402882 does not fit into a 32-bit signed integer.
+Timeout duration was set to 1.
+[2024-12-12T15:35:00.607Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2024-12-12T16:02:16.001Z] (node:3200) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-12T16:45:24.226Z] (node:10964) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-12T18:22:09.326Z] (node:7136) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-12T18:34:40.759Z] (node:15816) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-12T18:51:19.092Z] (node:16420) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-12T19:56:40.754Z] (node:10168) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-13T01:20:11.982Z] (node:14636) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2024-12-13T03:56:24.388Z] (node:10448) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)

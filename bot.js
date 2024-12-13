@@ -1,61 +1,45 @@
-// Import the necessary modules
+// Load environment variables
 require('dotenv').config();
-const { Client, GatewayIntentBits, ButtonBuilder, ButtonStyle, ActionRowBuilder, EmbedBuilder, ComponentType, Events, Intents, interactionCreate, StringSelectMenuBuilder, AttachmentBuilder, Partials, ActivityType } = require('discord.js');
+console.log('Bot token loaded:', process.env.DISCORD_TOKEN);
+
+// Import Node.js core modules
+const fs = require('fs');
+const path = require('path');
+const { exec } = require('child_process');
+const EventEmitter = require('events');
+
+const chatCommands = new Map();
+const chatCommandFiles = fs.readdirSync(path.join(__dirname, 'chat commands')).filter(file => file.endsWith('.js'));
+
+for (const file of chatCommandFiles) {
+    const command = require(`./chat commands/${file}`);
+    chatCommands.set(command.name, command);
+}
+
+// Import third-party libraries
+const { Client, GatewayIntentBits, Partials, ActivityType, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { REST } = require('@discordjs/rest');
+const { Routes } = require('discord-api-types/v10');
+const axios = require('axios');
 const schedule = require('node-schedule');
+const { DateTime } = require('luxon');
+const Canvas = require('canvas');
+const he = require('he');
+const { DisTube } = require('distube');
+const { YtDlpPlugin } = require('@distube/yt-dlp');
+const { SpotifyPlugin } = require('@distube/spotify');
+
+// Environment variables and constants
+const token = process.env.DISCORD_TOKEN;
 const spotifyClientId = process.env.SPOTIFY_CLIENT_ID;
 const spotifyClientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 const youtubeApiKey = process.env.YOUTUBE_API_KEY;
 const WORDNIK_API_KEY = process.env.WORDNIK_API_KEY;
-const PREFIX = '!wotd';
-const notificationConfig = require('./notifications.json');
-const { exec } = require('child_process');
-const { token, clientId, guildId } = require('./config.json');
-const { DisTube } = require('distube');
-const { YtDlpPlugin } = require('@distube/yt-dlp');
-const { SpotifyPlugin } = require('@distube/spotify');
-const axios = require('axios');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord-api-types/v10');
 const isTestMode = false; // Change to false when not in test mode
-const afkUsers = new Map();
-const he = require('he');
-const fs = require('fs');
-const path = require('path');
-const { DateTime } = require('luxon');
-//const { Routes } = require('discord-api-types/v9');
-const rest = new REST({ version: '10' }).setToken(token);
-const dotenv = require('dotenv');
-const EventEmitter = require('events');
-const emitter = new EventEmitter();
-// Axios instance for StartGG API
-const startGGAPI = axios.create({
-    baseURL: 'https://api.start.gg/gql/alpha',
-    headers: { 'Authorization': `Bearer ${process.env.STARTGG_API_KEY}` }
-  });
-const userColors = {
-    '435125886996709377': '\x1b[32m', //androgalaxi=blue
-    '1286383453016686705': '\x1b[38;5;205m', //Lmutt090=pink
-    '1123769629165244497': '\x1b[38;5;226m'
-};
-const userColorsN = {
-    '435125886996709377': '#1e90ff', // Androgalaxi = neutral blue
-    '1286383453016686705': '#ff82ab', // Lmutt090 = soft pink
-    '1123769629165244497': '#ffff00'
-};
+const PREFIX = '!wotd';
 
-// Group: DIRECT user Perms
-const allowedUsers = fs.readFileSync(path.join(__dirname, 'other', 'allowed.txt'), 'utf-8')
-    .split('\n')
-    .map(id => id.trim())
-    .filter(id => id.length > 0); // Remove any empty lines or whitespace
-
-console.log('Allowed people are ' + allowedUsers); // For debugging: outputs the array of allowed users
-// const trustUsers = ['userid'];
-// const level1allow = [...trustUsers, ...allowedUsers];
-// Group end
-const { SlashCommandBuilder } = require('@discordjs/builders');
-
-// Create a new Discord client with intents to listen for messages
+// Discord client setup
 const client = new Client({
     intents: [
         GatewayIntentBits.Guilds,
@@ -65,68 +49,33 @@ const client = new Client({
         GatewayIntentBits.DirectMessages,
         GatewayIntentBits.GuildPresences,
     ],
-    partials: [Partials.Channel] // Required for DM support
+    partials: [Partials.Channel], // Required for DM support
 });
 
-// Logging for any errors that are not caught in the terminal
-process.on('unhandledRejection', (error) => {
-    console.error('Unhandled promise rejection:', error);
-});
+// DisTube setup
+const setupDisTube = require('./distube');
+const distube = setupDisTube(client);
 
-client.on('error', (error) => {
-    console.error('Client error:', error);
-});
+// Commands configuration
+const { aboutCommand, banCommand, kickCommand, muteCommand, unmuteCommand, timeoutCommand, 
+        sayCommand, pingCommand, uptimeCommand, setStatusCommand, remindCommand, 
+        truthordareCommand, creditsCommand, afkCommand } = {
+    aboutCommand: require('./commands/about.js'),
+    banCommand: require('./commands/ban.js'),
+    kickCommand: require('./commands/kick.js'),
+    muteCommand: require('./commands/mute.js'),
+    unmuteCommand: require('./commands/unmute.js'),
+    timeoutCommand: require('./commands/timeout.js'),
+    sayCommand: require('./commands/say.js'),
+    pingCommand: require('./commands/ping.js'),
+    uptimeCommand: require('./commands/uptime.js'),
+    setStatusCommand: require('./commands/setstatus.js'),
+    remindCommand: require('./commands/reminder.js'),
+    truthordareCommand: require('./commands/truthordare.js'),
+    creditsCommand: require('./commands/credits.js'),
+    afkCommand: require('./commands/afk.js'),
+};
 
-// Function to log errors to error.log
-function logError(error) {
-    const errorMessage = `[${new Date().toISOString()}] ${error}\n`;
-    fs.appendFileSync('./error.log', errorMessage, 'utf8');
-}
-
-// Capture console errors
-console.error = (function(oldError) {
-    return function(...args) {
-        logError(args.join(' '));
-        oldError.apply(console, args);
-    };
-})(console.error);
-
-// Capture unhandled promise rejections
-process.on('unhandledRejection', (reason) => {
-    logError(`Unhandled Rejection: ${reason}`);
-});
-
-// Capture uncaught exceptions
-process.on('uncaughtException', (err) => {
-    logError(`Uncaught Exception: ${err}`);
-    process.exit(1); // Optional: Exit the process after logging the error
-});
-
-//MaxListeners
-emitter.setMaxListeners(30)
-
-/*await rest.put(
-    Routes.applicationCommands(client.user.id),
-    { body: commands }  // This will now include both the 'about' and 'ban' commands
-);*/
-
-// Load environment variables from .env file
-require('dotenv').config(); // Ensure dotenv is required correctly
-
-// Import your command files
-const aboutCommand = require('./commands/about.js');
-const banCommand = require('./commands/ban.js');
-const kickCommand = require('./commands/kick.js');
-const muteCommand = require('./commands/mute.js');
-const unmuteCommand = require('./commands/unmute.js');
-const timeoutCommand = require('./commands/timeout.js');
-const sayCommand = require('./commands/say.js');
-const pingCommand = require('./commands/ping.js');
-const uptimeCommand = require('./commands/uptime.js');
-const setStatusCommand = require('./commands/setstatus.js');
-const remindCommand = require('./commands/reminder.js');
-
-// Build the commands array for registration
 const commands = [
     aboutCommand.data.toJSON(),
     banCommand.data.toJSON(),
@@ -139,39 +88,123 @@ const commands = [
     uptimeCommand.data.toJSON(),
     setStatusCommand.data.toJSON(),
     remindCommand.data.toJSON(),
+    truthordareCommand.data.toJSON(),
+    creditsCommand.data.toJSON(),
+    afkCommand.data.toJSON(),
 ];
 
+// Logger configuration
+const logHistory = [];
+function logError(error) {
+    const errorMessage = `[${new Date().toISOString()}] ${error}\n`;
+    fs.appendFileSync('./error.log', errorMessage, 'utf8');
+}
+process.on('unhandledRejection', (reason) => logError(`Unhandled Rejection: ${reason}`));
+process.on('uncaughtException', (err) => {
+    logError(`Uncaught Exception: ${err}`);
+    process.exit(1);
+});
+console.error = (function (oldError) {
+    return function (...args) {
+        logError(args.join(' '));
+        oldError.apply(console, args);
+    };
+})(console.error);
+
+// User configuration
+const userColors = {
+    '435125886996709377': '\x1b[32m', // Androgalaxi = blue
+    '1286383453016686705': '\x1b[38;5;205m', // Lmutt090 = pink
+    '1123769629165244497': '\x1b[38;5;226m', // Neutral = yellow
+};
+const userColorsN = {
+    '435125886996709377': '#1e90ff',
+    '1286383453016686705': '#ff82ab',
+    '1123769629165244497': '#ffff00',
+};
+const allowedUsers = fs
+    .readFileSync(path.join(__dirname, 'other', 'allowed.txt'), 'utf-8')
+    .split('\n')
+    .map((id) => id.trim())
+    .filter((id) => id.length > 0);
+
+console.log('Allowed users:', allowedUsers);
+
+// Axios instance for StartGG API
+const startGGAPI = axios.create({
+    baseURL: 'https://api.start.gg/gql/alpha',
+    headers: { Authorization: `Bearer ${process.env.STARTGG_API_KEY}` },
+});
+
+// Other configurations
+const rest = new REST({ version: '10' }).setToken(token);
+const BotInstanceNumber = `bt-${Math.floor(1000000000 + Math.random() * 9000000000)}`;
+const afkUsers = new Map();
+const emitter = new EventEmitter();
+emitter.setMaxListeners(40);
+
+// Error handlers for client
+client.on('error', (error) => console.error('Client error:', error));
+
+// Export client and configurations if needed
+module.exports = { client, commands, distube };
+
 // Now, you can use this 'commands' array to register your commands with Discord
+
+client.on('messageCreate', async (message) => {
+    if (message.author.bot) return;
+
+    const prefix = '!';
+
+    if (!message.content.startsWith(prefix)) return;
+
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const commandName = args.shift().toLowerCase();
+
+    if (chatCommands.has(commandName)) {
+        const command = chatCommands.get(commandName);
+        try {
+            await command.execute(message, args);
+        } catch (error) {
+            console.error(`Error executing command ${commandName}:`, error);
+            await message.channel.send('There was an error executing that command.');
+        }
+    }
+});
 
 //Spofiy Log
 console.log(`Spotify Client ID: ${spotifyClientId}`);
 console.log(`Spotify Client Secret: ${spotifyClientSecret}`);
 
-// Register the slash commands when the bot is ready
 client.once('ready', async () => {
     try {
         console.log('\x1b[36m%s\x1b[0m', 'Bot is online and ready for war with Discord users!');
 
         // Register slash commands globally
         await rest.put(
-            Routes.applicationCommands(client.user.id),
+            Routes.applicationCommands(client.user.id), // This registers globally
             { body: commands }
         );
         console.log('\x1b[32m%s\x1b[0m', 'Slash commands registered successfully.');
     } catch (error) {
         console.error('\x1b[31m%s\x1b[0m', 'Error during bot setup:', error);
     }
+
     if (isTestMode) {
         console.warn(`\"You have test mode set to \'true\', set it to \'false\' when you are done testing it!\" -Lucas \（・ω‐\）`);
     }
-    console.log('\x1b[34m%s\x1b[0m', '\"Make sure to use clear when you\'re done!\" -Lucas \（・ω‐\）');
 
-    client.on('interactionCreate', async interaction => {
-        if (!interaction.isCommand()) return; // Make sure it's a slash command
-      
-        const { commandName } = interaction;
-      
-        // Find and execute the corresponding command
+    console.log(BotInstanceNumber);
+    console.log('\x1b[34m%s\x1b[0m', '\"Make sure to use clear when you\'re done!\" -Lucas \（・ω‐\）');
+});
+
+// Move the interactionCreate listener here
+client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return;
+
+    const { commandName } = interaction;
+
+    try {
         if (commandName === 'about') {
             await aboutCommand.execute(interaction);
         } else if (commandName === 'ban') {
@@ -194,41 +227,16 @@ client.once('ready', async () => {
             await setStatusCommand.execute(interaction);
         } else if (commandName === 'remind') {
             await remindCommand.execute(interaction);
+        } else if (commandName === 'truthordare') {
+            await truthordareCommand.execute(interaction);
+        } else if (commandName === 'credits') {
+            await creditsCommand.execute(interaction);
+        } else if (commandName === 'afk') {
+            await afkCommand.execute(interaction);
         }
-    });
-});
-
-const distube = new DisTube(client, {
-    plugins: [new YtDlpPlugin(), new SpotifyPlugin({
-        api: {
-            clientId: process.env.SPOTIFY_CLIENT_ID,
-            clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-        }
-    })],
-    emitNewSongOnly: true,  // Keep this if you only want to emit 'playSong' once
-});
-
-
-// Handle inwarneractionCreate event for slash commands
-client.on('interactionCreate', async (interaction) => {
-    if (!interaction.isCommand()) return;
-
-    const { commandName } = interaction;
-
-    if (commandName === 'about') {
-        const aboutEmbed = new EmbedBuilder()
-            .setColor(0x7289da) // Discord's blurple color
-            .setTitle('AetherX Bot Information')
-            .setDescription('AetherX is a custom Discord bot designed by Androgalaxi and lmutt090.\n\nInvite the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1067646246254284840&scope=bot&permissions=8) or the link below.')
-            .addFields(
-                { name: 'Developer', value: '[Androgalaxi](https://discord.com/users/435125886996709377) and [lmutt090](https://discord.com/users/1286383453016686705)' },
-                { name: 'Bot Version', value: '0.3' },
-                { name: 'Bot Invite Link', value: '[Invite AetherX](https://discord.com/oauth2/authorize?client_id=1067646246254284840&scope=bot&permissions=8)' },
-                { name: 'Support Server', value: '[Join the Support Server](https://discord.gg/yFY8Fnbtp9)' }
-            )
-            .setFooter({ text: 'AetherX Bot - Created with suffering by Androgalaxi and lmutt090' });
-
-        await interaction.reply({ embeds: [aboutEmbed] });
+    } catch (error) {
+        console.error(`Error executing command: ${commandName}`, error);
+        await interaction.reply({ content: 'There was an error executing this command.', ephemeral: true });
     }
 });
 
@@ -374,7 +382,7 @@ client.on('messageCreate', async (message) => {
 // Map to store the last help message for each user
 const userHelpMessages = new Map();
 
-//Server Info
+// Server Info
 client.on('messageCreate', async (message) => {
     // Ignore messages from bots
     if (message.author.bot) return;
@@ -391,7 +399,7 @@ client.on('messageCreate', async (message) => {
         const textChannelCount = guild.channels.cache.filter(channel => channel.type === 'GUILD_TEXT').size;
         const voiceChannelCount = guild.channels.cache.filter(channel => channel.type === 'GUILD_VOICE').size;
         const owner = await guild.fetchOwner();
-        
+
         // Fetch owner roles and get the highest role name
         const ownerRoles = owner.roles.cache;
         const ownerRole = ownerRoles.size > 0 ? ownerRoles.sort((a, b) => b.position - a.position).first().name : 'No Role';
@@ -485,7 +493,7 @@ async function sendHelpMessage(message, page = 1) { // Default page is 1
     const helpPages = [
         {
             title: 'General Commands',
-            description: '!changelog - Display changes made to the bot.\n!request - Request a feature or features to be added\n!afk - Go afk and set a custom message\n!ping - Displays the bot latency and API latency.\n!help - Shows this help menu with all available commands.\n!yippie - Sends a "Yippee" GIF.\n!global [message] - Sends a message to all servers where the bot is present.\n!about or !info - Provides information about the bot, developer, and invites.\n!profile/!profile @user/!profile (user ID) - See information on a users profile.'
+            description: '!changelog - Display changes made to the bot.\n!credits - Displays credits for the bot\n!request - Request a feature or features to be added\n!afk - Go afk and set a custom message\n!ping - Displays the bot latency and API latency.\n!help - Shows this help menu with all available commands.\n!yippie - Sends a "Yippee" GIF.\n!global [message] - Sends a message to all servers where the bot is present.\n!about or !info - Provides information about the bot, developer, and invites.\n!profile/!profile @user/!profile (user ID) - See information on a users profile.'
         },
         {
             title: 'Music Commands',
@@ -611,7 +619,7 @@ client.on('messageCreate', async (message) => {
     if (message.content.startsWith('!log') || message.content.startsWith('Aether,') || message.content.startsWith('Log this:')) {
         // Check if the user is allowed to log
         if (!allowedUsers.includes(message.author.id)) {
-            return message.channel.send('You do not have permission to use this command... LOL!!!! btw, this is a dev command...');
+            return message.channel.send('You do not have permission to use this command, this is a dev command.');
             console.error(`${message.author.username} tried to log`)
         }
 
@@ -628,7 +636,7 @@ client.on('messageCreate', async (message) => {
         console.log(`${userColor}[LOG] ${message.author.username}: ${args}\x1b[37m`);
 
         // Send confirmation to the Discord channel
-        message.channel.send('Your message has been logged to the console.');
+        message.channel.send(`Your message has been logged to the console. Bot Instance: ${BotInstanceNumber}`);
     }
 });
 
@@ -648,56 +656,6 @@ client.on('messageCreate', async (message) => {
         });
     }
 
-client.on('messageCreate', async (message) => {
-    // Check if the command is `!cringeattack`
-    if (message.content.startsWith('!cringeattack')) {
-        // Define the path to the image file you want the bot to post
-        const filePath = path.join(__dirname, 'images', 'file.gif'); // Replace 'file.gif' with the actual file name
-
-        // Create the attachment from the file
-        const file = new AttachmentBuilder(filePath);
-
-        // Post the file in the same channel where the command was sent
-        message.channel.send({ files: [file] })
-            .then(() => {
-                console.log(`Image posted by bot in ${message.channel.name}`);
-            })
-            .catch(error => {
-                console.error(`Failed to post image: ${error}`);
-                message.channel.send('There was an error posting the image.');
-            });
-    }
-});
-
-   
-    
-    
-// Respond to !say command
-client.on('messageCreate', async (message) => {
-    // Ignore messages from bots
-    if (message.author.bot) return;
-
-    // Check if the message starts with "!say"
-    if (message.content.startsWith('!say')) {
-        // Remove the command part "!say" and trim any whitespace
-        const sayMessage = message.content.slice('!say'.length).trim();
-
-        // If no message was provided, prompt the user to provide one
-        if (!sayMessage) {
-            return await message.channel.send('Please provide a message for the bot to say.');
-        }
-
-        // Send the user's message through the bot
-        await message.channel.send('n');
-
-        // Check if the bot has permission to delete the message, then delete it
-        if (message.deletable) {
-            await message.delete().catch((err) => {
-                console.error('Failed to delete message:', err);
-            });
-        }
-    }
-});
 
 
 //Moderation Commands
@@ -727,12 +685,14 @@ client.on('messageCreate', async (message) => {
             .setTitle('Latest News')
             .setDescription(
                 '**__Here are the latest updates:__**\n' +
-                '* Added !wotd\n'+
-                '* Added !wotd to !help\n\n'+
+                '* Changed invite URL to match correct permissions needed\n'+
+                '* Fixed !about and /about bug where one message would show the old version without the Terms of Service or Privacy Policy\n'+
+                '* Added Terms Of Service\n'+
+                '* Added Privacy Policy\n\n'+
 
                 '**That\'s all for now!**'
             )
-            .setFooter({ text: 'Changelog provided by AetherX Bot Devs' });
+            .setFooter({ text: 'Changelog provided by AetherX Devs' });
 
         message.channel.send({ embeds: [newsEmbed] });
         if (isTestMode) {
@@ -761,25 +721,29 @@ client.on('messageCreate', async (message) => {
     }
     
 
-    // Respond to !about or !info command with bot information
-    if (message.content === '!about' || message.content === '!info') {
-        const aboutEmbed = new EmbedBuilder()
-            .setColor(0x7289da)
-            .setTitle('AetherX Bot Information')
-            .setDescription('AetherX is a custom Discord bot designed by Androgalaxi and lmutt090.\n\nInvite the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1067646246254284840&scope=bot&permissions=8) or the link below.')
-            .addFields(
-                { name: 'Developer', value: '[Androgalaxi](https://discord.com/users/435125886996709377) and [lmutt090](https://discord.com/users/1286383453016686705)' },
-                { name: 'Bot Version', value: '0.3' },
-                { name: 'Bot Invite Link', value: '[Invite AetherX](https://discord.com/oauth2/authorize?client_id=1067646246254284840&scope=bot&permissions=8)' },
-                { name: 'Support Server', value: '[Join the Support Server](https://discord.gg/yFY8Fnbtp9)' }
-            )
-            .setFooter({ text: 'AetherX Bot - Created with suffering by Androgalaxi and lmutt090' });
+// Respond to !about or !info command with bot information
+if (message.content === '!about' || message.content === '!info') {
+    const aboutEmbed = new EmbedBuilder()
+        .setColor(0x7289da)
+        .setTitle('AetherX Bot Information')
+        .setDescription('AetherX is a custom Discord bot designed by Androgalaxi and lmutt090.\n\nInvite the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1067646246254284840) or the link below.')
+        .addFields(
+            { name: 'Developer', value: '[Androgalaxi](https://discord.com/users/435125886996709377) and [lmutt090](https://discord.com/users/1286383453016686705)' },
+            { name: 'Bot Version', value: '0.3' },
+            { name: 'Bot Invite Link', value: '[Invite AetherX](https://discord.com/oauth2/authorize?client_id=1067646246254284840)' },
+            { name: 'Support Server', value: '[Join the Support Server](https://discord.gg/yFY8Fnbtp9)' },
+            { name: '\u200B', value: '\u200B' }, // Blank field for spacing
+            { name: 'Terms of Service', value: '[View Terms of Service](https://aetherx-discord-bot.github.io/TOS/)' },
+            { name: 'Privacy Policy', value: '[View Privacy Policy](https://aetherx-discord-bot.github.io/PrivPOL/)' }
+        )
+        .setFooter({ text: 'AetherX - Created by Androgalaxi, lmutt090, and many other wonderful people' });
 
-        message.channel.send({ embeds: [aboutEmbed] });
-        if (isTestMode) {
-            console.warn(`${message.author.username} GOT OUR INFO`);
-        }
+    message.channel.send({ embeds: [aboutEmbed] });
+    if (isTestMode) {
+        console.warn(`${message.author.username} GOT OUR INFO`);
     }
+}
+
 });
 
 // Music commands
@@ -968,6 +932,73 @@ client.on('messageCreate', async (message) => {
                 .setColor(0x00ff00) // Green color for the request
                 .setTitle('Feature/Command Request')
                 .setDescription(`**From:** ${message.author.tag}\n\n**Request:** ${args}`)
+                .setTimestamp();
+
+            let unavailableCount = 0;
+            let availableCount = 0;
+
+            // Send the request to all users in the list
+            for (const userId of userIds) {
+                try {
+                    const user = await message.client.users.fetch(userId); // Fetch user
+                    const guildMember = message.guild.members.cache.get(userId);
+                    const userPresence = guildMember?.presence?.status;
+
+                    // Check if user is offline or in DND
+                    if (userPresence === 'offline' || userPresence === 'dnd') {
+                        unavailableCount++;
+                        continue; // Skip DM if the user is unavailable
+                    }
+
+                    await user.send({ embeds: [requestEmbed] });
+                    availableCount++; // Count the successfully sent DM
+                } catch (error) {
+                    console.error(`Failed to send DM to ${userId}:`, error);
+                    unavailableCount++; // Increment unavailable count if there's an error
+                }
+            }
+
+            // Create an embed to inform the user who made the request
+            const feedbackEmbed = new EmbedBuilder().setTitle('Request Status').setTimestamp();
+
+            if (unavailableCount === userIds.length) {
+                feedbackEmbed
+                    .setColor(0xff0000) // Red color for failure
+                    .setDescription('All recipients are currently unavailable (DND or offline). Please try again later or send an email to fortnitefunny82.');
+            } else if (unavailableCount > 0) {
+                feedbackEmbed
+                    .setColor(0xffa500) // Orange for partial success
+                    .setDescription(`${unavailableCount} recipient(s) were unavailable, but your request was sent to ${availableCount} recipient(s).`);
+            } else {
+                feedbackEmbed
+                    .setColor(0x00ff00) // Green for success
+                    .setDescription('Your request has been sent to all recipients!');
+            }
+
+            // Send the feedback embed to the user in the same channel
+            message.channel.send({ embeds: [feedbackEmbed] });
+        } catch (error) {
+            console.error('Error sending request:', error);
+            const errorEmbed = new EmbedBuilder()
+                .setColor(0xff0000) // Red for error
+                .setTitle('Error')
+                .setDescription('I am dead...');
+            message.channel.send({ embeds: [errorEmbed] });
+        }
+    }
+});
+client.on('messageCreate', async (message) => {
+    if (message.content === '!request bot developer') {
+
+        try {
+            // List of user IDs to DM (Add more user IDs if needed)
+            const userIds123123421415 = ['435125886996709377', '1286383453016686705']; // Replace with your user IDs
+
+            // Create an embed for the request
+            const requestEmbed = new EmbedBuilder()
+                .setColor(0x00ff00) // Green color for the request
+                .setTitle('Feature/Command Request')
+                .setDescription(`**From:** ${message.author.tag}\n\n** Dev request`)
                 .setTimestamp();
 
             let unavailableCount = 0;
@@ -1786,8 +1817,6 @@ client.on('messageCreate', async (message) => {
 //End of Tic-Tac-Toe
 
 //Start of Coin Flip
-
-// Coin Flip Game Logic
 async function startCoinFlipGame(message) {
     const outcomes = ['Heads', 'Tails'];
     const result = outcomes[Math.floor(Math.random() * outcomes.length)];
@@ -1806,6 +1835,8 @@ client.on('messageCreate', async (message) => {
         await startCoinFlipGame(message);
     }
 });
+// Coin Flip Game Logic
+
 //End of Coin Flip
 
 // Listen for "!stroke" to cause a stroke
@@ -2088,7 +2119,7 @@ client.on('messageCreate', async (message) => {
 
 //End of AFK
 
-client.on(Events.MessageCreate, (message) => {
+client.on('messageCreate', (message) => {
     if (message.content.startsWith('!news')) {
         if (allowedUsers.includes(message.author.id)) {
             const userMessage = message.content.slice('!news'.length).trim();
@@ -2268,9 +2299,9 @@ client.on("messageCreate", async (message) => {
         }
 
         const confirmationEmbed = new EmbedBuilder()
-            .setTitle('Restart Confirmation')
-            .setDescription('Are you sure you want to restart the bot?')
-            .setColor(0xFFFF00);
+        .setTitle('Restart Confirmation')
+        .setDescription(`Are you sure you want to restart the bot?\n\n**Bot Instance:** ${BotInstanceNumber}`)
+        .setColor(0xFFFF00);
 
         const buttons = new ActionRowBuilder()
             .addComponents(
@@ -2291,7 +2322,7 @@ client.on("messageCreate", async (message) => {
 
         collector.on('collect', async (interaction) => {
             if (interaction.customId === 'confirm_restart') {
-                await interaction.update({ content: 'Restarting bot...', embeds: [], components: [] });
+                await interaction.update({ content: `Restarting bot instance ${BotInstanceNumber}`, embeds: [], components: [] });
                 console.log(`${message.author.id} has restarted the bot.`);
                 collector.stop('confirmed');
 
@@ -2307,14 +2338,14 @@ client.on("messageCreate", async (message) => {
 
                 process.exit();
             } else if (interaction.customId === 'cancel_restart') {
-                await interaction.update({ content: 'Restart canceled.', embeds: [], components: [] });
+                await interaction.update({ content: `Restart canceled for ${BotInstanceNumber}`, embeds: [], components: [] });
                 collector.stop('canceled');
             }
         });
 
         collector.on('end', async (collected, reason) => {
             if (reason === 'time') {
-                await confirmationMessage.edit({ content: 'Restart request timed out.', embeds: [], components: [] });
+                await confirmationMessage.edit({ content: `Restart request for ${BotInstanceNumber} timed out.`, embeds: [], components: [] });
             }
         });
     }
@@ -2440,6 +2471,25 @@ client.on('messageCreate', async (message) => {
             console.error('Error fetching Word of the Day:', error);
             message.channel.send('Sorry, I couldn\'t fetch the Word of the Day.');
         }
+    }
+});
+
+client.on('messageCreate', message => {
+    if (message.author.bot) return;
+
+    if (message.content === '!credits') {
+        const { EmbedBuilder } = require('discord.js');
+
+        const creditsEmbed = new EmbedBuilder()
+            .setColor(0x7289da)
+            .setTitle('AetherX Bot Credits')
+            .setDescription('Special thanks to the developers and contributors who made AetherX possible!')
+            .addFields(
+                { name: 'Full Credits', value: '[View Full Credits](https://aetherx-discord-bot.github.io/Credits/)' }
+            )
+            .setFooter({ text: 'AetherX Bot - Created by an amazing team of developers and contributors!' });
+
+        message.channel.send({ embeds: [creditsEmbed] });
     }
 });
 
