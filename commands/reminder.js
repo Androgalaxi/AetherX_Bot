@@ -26,15 +26,21 @@ module.exports = {
     const message = interaction.options.getString('message');
     const location = interaction.options.getString('location');
     const timeString = interaction.options.getString('time');
-    
+
     // Parse the time and validate it
-    const reminderTime = new Date(timeString);
+    const [datePart, timePart] = timeString.split(' ');
+    const [year, month, day] = datePart.split('-').map(Number);
+    const [hour, minute] = timePart.split(':').map(Number);
+
+    const reminderTime = new Date(year, month - 1, day, hour, minute);
 
     if (isNaN(reminderTime.getTime())) {
       return interaction.reply({ content: 'Invalid time format. Please use YYYY-MM-DD HH:MM.', ephemeral: true });
     }
 
-    const timeUntilReminder = reminderTime.getTime() - Date.now();
+    const now = Date.now();
+    const timeUntilReminder = reminderTime.getTime() - now;
+
     if (timeUntilReminder <= 0) {
       return interaction.reply({ content: 'The time must be in the future.', ephemeral: true });
     }
@@ -44,17 +50,21 @@ module.exports = {
 
     // Schedule the reminder
     setTimeout(async () => {
-      const reminderMessage = `Reminder: ${message}`;
-
-      if (location === 'server') {
-        await interaction.followUp({ content: reminderMessage });
-      } else if (location === 'dm') {
-        try {
-          await interaction.user.send(reminderMessage);
-        } catch (err) {
-          console.error('Failed to send DM:', err);
-        }
-      }
+      await sendMessage(interaction, message, location);
     }, timeUntilReminder);
-  },
+  }
 };
+
+async function sendMessage(interaction, message, location) {
+  const reminderMessage = `Reminder: ${message}`;
+
+  try {
+    if (location === 'server') {
+      await interaction.followUp({ content: reminderMessage });
+    } else if (location === 'dm') {
+      await interaction.user.send(reminderMessage);
+    }
+  } catch (err) {
+    console.error('Failed to send reminder:', err);
+  }
+}

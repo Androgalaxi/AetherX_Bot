@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "light-andy.discord-snippy",
-        "qwtel.sqlite-viewer"
+        "qwtel.sqlite-viewer",
+        "naumovs.color-highlight"
     ]
 }

@@ -58,8 +58,8 @@ const distube = setupDisTube(client);
 
 // Commands configuration
 const { aboutCommand, banCommand, kickCommand, muteCommand, unmuteCommand, timeoutCommand, 
-        sayCommand, pingCommand, uptimeCommand, setStatusCommand, remindCommand, 
-        truthordareCommand, creditsCommand, afkCommand } = {
+        sayCommand, pingCommand, uptimeCommand, setStatusCommand, remindCommand,
+        truthordareCommand, creditsCommand, afkCommand, MessageCreate } = {
     aboutCommand: require('./commands/about.js'),
     banCommand: require('./commands/ban.js'),
     kickCommand: require('./commands/kick.js'),
@@ -115,12 +115,14 @@ console.error = (function (oldError) {
 const userColors = {
     '435125886996709377': '\x1b[32m', // Androgalaxi = blue
     '1286383453016686705': '\x1b[38;5;205m', // Lmutt090 = pink
-    '1123769629165244497': '\x1b[38;5;226m', // Neutral = yellow
+    '1123769629165244497': '\x1b[38;5;226m',
+    '338375139404283906' : '\x1b[38;5;32m',
 };
 const userColorsN = {
     '435125886996709377': '#1e90ff',
     '1286383453016686705': '#ff82ab',
     '1123769629165244497': '#ffff00',
+    '338375139404283906': '#b508cc',
 };
 const allowedUsers = fs
     .readFileSync(path.join(__dirname, 'other', 'allowed.txt'), 'utf-8')
@@ -326,6 +328,79 @@ function logErrorToFile(error) {
     fs.appendFile('error.log', errorMessage, (err) => {
         if (err) console.error('Failed to write to log file:', err);
     });
+}
+const botStartTime = new Date();
+
+client.on('messageCreate', (message) => {
+    if (message.author.bot) return; // Ignore bot messages
+
+    const [command, botInstanceNumber] = message.content.split(' ');
+
+    if (command === '!botruninfo') {
+        // Check if the user is allowed
+        if (!allowedUsers.includes(message.author.id)) {
+            return message.reply('no... not for u');
+        }
+
+        // Check if botInstanceNumber was provided
+        if (!botInstanceNumber) {
+            return message.reply(
+                'You need to specify a BotInstanceNumber. Example: `!botruninfo bt-123456` but if another bot instance is running, check that one'
+            );
+        }
+
+        let updateCount = 0;
+        // Send the first embed immediately
+        message.reply({ embeds: [generateEmbed(botInstanceNumber)] }).then((sentMessage) => {
+            const interval = setInterval(() => {
+                // Edit the previously sent message with new embed
+                sentMessage.edit({ embeds: [generateEmbed(botInstanceNumber)] });
+
+                // Stop after a minute
+                updateCount++;
+                if (updateCount >= 60) {
+                    clearInterval(interval);
+                }
+            }, 1000); // Update every second
+        });
+    }
+});
+
+// Helper function to generate the embed
+function generateEmbed(botInstanceNumber) {
+    const currentTime = new Date();
+    const uptime = Math.floor((currentTime - botStartTime) / 1000); // Uptime in seconds
+
+    const hours = Math.floor(uptime / 3600);
+    const minutes = Math.floor((uptime % 3600) / 60);
+    const seconds = uptime % 60;
+
+    const formattedUptime = `${hours}h ${minutes}m ${seconds}s`;
+
+    // Get the bot's status (e.g., online, idle, dnd)
+    const status = client.user.presence.status;  // 'online', 'idle', 'dnd', 'invisible'
+
+    // Get the bot's ping (latency)
+    const ping = client.ws.ping;
+
+    // Get the bot's status message (activity)
+    const activity = client.user.presence.activities[0] || {};  // First activity, if any
+    const activityName = activity.name || 'No activity, set one with /setstatus'; // Name of the activity, if set
+    const activityType = activity.type ? ` (${activity.type})` : ''; // Type of activity (e.g., "PLAYING")
+
+    // Create and return the embed with the bot information
+    return new EmbedBuilder()
+        .setColor('#00FF00') // Set embed color
+        .setTitle('Bot Run Information')
+        .addFields(
+            { name: 'Bot Instance', value: botInstanceNumber, inline: true },
+            { name: 'Status', value: status.charAt(0).toUpperCase() + status.slice(1), inline: true },
+            { name: 'Ping', value: `${ping}ms`, inline: true },
+            { name: 'Status Message', value: `${activityName}${activityType}`, inline: true },
+            { name: 'Task', value: 'Processing Data', inline: true },
+            { name: 'Uptime', value: formattedUptime, inline: true }
+        )
+        .setTimestamp();
 }
 
 client.on('messageCreate', async (message) => {
@@ -702,7 +777,7 @@ client.on('messageCreate', async (message) => {
 
    
     // Respond to !yippie command and send the GIF or say "No yippe for you"
-    if (message.content === '!yippie') {
+    if (message.content === '!yippie' || message.content === 'yippie') {
         if (Math.random() < 0.01) {
             message.channel.send('No yippe for you');
         } else {
