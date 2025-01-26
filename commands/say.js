@@ -15,12 +15,12 @@ module.exports = {
         const message = interaction.options.getString('message');
         
         // Defer reply to prevent the user from seeing the command confirmation
-        await interaction.deferReply({ ephemeral: true });
+        await interaction.deferReply({ flags: 64 });
         
         // Send the message in the channel the command was used in
         await interaction.channel.send(message);
 
         // Reply to the user in an ephemeral message so only they can see it
-        await interaction.editReply({ content: 'Message sent!', ephemeral: true });
+        await interaction.editReply({ content: 'Message sent!', flags: 64 });
     }
 };

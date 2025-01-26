@@ -1,0 +1,1040 @@
+[2025-01-21T13:19:16.552Z] (node:43984) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-21T13:20:00.277Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:21:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:22:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:23:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:24:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:24:40.206Z] (node:49532) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-21T13:25:00.242Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:26:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:27:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:28:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:29:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:30:00.218Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:31:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:32:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:33:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:34:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:35:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:36:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:37:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:38:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:39:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:40:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:41:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:42:00.170Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:43:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:44:00.114Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:45:00.177Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:46:00.157Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:47:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:48:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:49:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:50:00.196Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:51:00.119Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:52:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:53:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:54:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:55:00.206Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:56:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:57:00.116Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:58:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T13:59:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:00:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:01:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:02:00.162Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:03:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:04:00.121Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:05:00.190Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:06:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:07:00.115Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:08:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:09:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:10:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:11:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:12:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:13:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:14:00.168Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:15:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:16:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:17:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:18:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:19:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:20:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:21:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:22:00.116Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:23:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:24:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:25:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:26:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:27:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:28:00.196Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:29:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:30:00.208Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:31:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:32:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:33:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:34:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:35:00.162Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:36:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:37:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:38:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:39:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:40:00.236Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:41:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:42:00.163Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:43:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:44:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:45:00.181Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:46:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:47:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:48:00.124Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:49:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:50:00.216Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:51:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:52:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:53:00.118Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:54:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:55:00.226Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:56:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:57:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:58:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T14:59:00.743Z] Error checking Steam server status: AggregateError
+[2025-01-21T15:00:00.020Z] Error checking Steam server status: Error: getaddrinfo ENOTFOUND steamstat.us
+[2025-01-21T15:01:00.027Z] Error checking Steam server status: Error: getaddrinfo ENOTFOUND steamstat.us
+[2025-01-21T15:02:00.026Z] Error checking Steam server status: Error: getaddrinfo ENOTFOUND steamstat.us
+[2025-01-21T15:03:00.012Z] Error checking Steam server status: Error: getaddrinfo ENOTFOUND steamstat.us
+[2025-01-21T15:04:00.022Z] Error checking Steam server status: Error: getaddrinfo ENOTFOUND steamstat.us
+[2025-01-21T15:05:00.278Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:06:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:07:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:08:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:09:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:10:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:11:00.121Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:12:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:13:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:14:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:15:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:16:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:17:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:18:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:19:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:20:00.195Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:21:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:22:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:23:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:24:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:25:00.220Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:26:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:27:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:28:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:29:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:30:00.188Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:31:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:32:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:33:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:34:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:35:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:36:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:37:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:38:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:39:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:40:00.175Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:41:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:42:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:43:00.337Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:44:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:45:00.207Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:46:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:47:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:48:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:49:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:50:00.189Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:51:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:52:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:53:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:54:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:55:00.179Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:56:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:57:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:57:42.980Z] (node:49532) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-21T15:58:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T15:59:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:00:00.217Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:01:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:02:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:03:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:04:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:05:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:06:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:07:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:08:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:09:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:10:00.220Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:11:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:12:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:13:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:14:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:15:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:16:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:17:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:18:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:19:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:20:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:21:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:22:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:23:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:24:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:25:00.280Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:26:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:27:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:28:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:29:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:30:00.174Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:31:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:32:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:33:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:34:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:35:00.238Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:36:00.369Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:37:00.162Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:38:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:39:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:40:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:41:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:42:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:43:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:44:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:45:00.176Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:46:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:47:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:48:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:49:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:50:00.245Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:51:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:52:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:53:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:54:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:55:00.196Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:56:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:57:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:58:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T16:59:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:00:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:01:00.246Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:02:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:03:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:04:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:05:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:06:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:07:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:08:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:09:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:10:00.189Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:11:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:12:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:13:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:14:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:15:00.213Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:16:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:17:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:18:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:19:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:20:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:21:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:22:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:23:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:24:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:25:00.217Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:26:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:27:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:28:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:29:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:30:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:31:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:32:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:33:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:34:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:35:00.199Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:36:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:37:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:38:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:39:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:40:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:41:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:42:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:43:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:44:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:45:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:46:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:47:00.155Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:48:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:49:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:50:00.194Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:51:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:52:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:53:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:54:00.391Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:55:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:56:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:57:00.198Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:58:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T17:59:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:00:00.222Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:01:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:02:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:03:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:04:00.271Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:05:00.217Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:06:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:07:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:08:00.200Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:09:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:10:00.200Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:11:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:12:00.170Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:13:00.181Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:14:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:15:00.272Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:16:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:17:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:18:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:19:00.261Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:20:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:21:00.413Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:22:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:23:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:24:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:25:00.192Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:26:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:27:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:28:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:29:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:30:00.193Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:31:00.157Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:32:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:33:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:34:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:35:00.210Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:36:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:37:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:38:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:39:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:40:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:41:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:42:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:43:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:44:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:45:00.171Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:46:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:47:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:48:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:49:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:50:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:51:00.195Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:52:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:53:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:54:00.275Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:55:00.188Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:56:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:57:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:58:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T18:59:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:00:00.191Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:01:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:02:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:03:00.260Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:04:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:05:00.188Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:06:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:07:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:08:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:09:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:10:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:11:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:12:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:13:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:14:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:15:00.208Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:16:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:17:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:18:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:19:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:20:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:21:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:22:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:23:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:24:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:25:00.235Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:26:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:27:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:28:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:29:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:30:00.293Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:31:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:32:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:33:00.215Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:34:00.216Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:35:00.476Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:36:00.416Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:37:00.202Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:38:00.413Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:39:00.216Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:40:00.468Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:41:00.390Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:42:00.209Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:43:00.388Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:44:00.392Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:45:00.463Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:46:00.207Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:47:00.404Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:48:00.394Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:49:00.200Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:50:00.586Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:51:00.381Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:52:00.379Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:53:00.359Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:54:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:55:00.589Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:56:00.391Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:57:00.232Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:58:00.442Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T19:59:00.231Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:00:00.471Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:01:00.231Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:02:00.178Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:03:00.227Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:04:00.405Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:05:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:06:00.198Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:07:00.405Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:08:00.203Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:09:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:10:00.226Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:11:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:12:00.194Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:13:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:14:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:15:00.215Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:16:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:17:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:18:00.174Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:19:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:20:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:21:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:22:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:23:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:24:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:25:00.189Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:26:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:27:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:28:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:29:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:30:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:31:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:32:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:33:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:34:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:35:00.182Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:36:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:37:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:38:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:39:00.181Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:40:00.176Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:41:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:42:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:43:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:44:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:45:00.245Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:46:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:47:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:48:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:49:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:50:00.210Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:51:00.171Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:52:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:53:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:54:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:55:00.182Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:56:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:57:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:58:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T20:59:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:00:00.208Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:01:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:02:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:03:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:04:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:05:00.244Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:06:00.212Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:07:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:08:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:09:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:10:00.233Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:11:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:12:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:13:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:14:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:15:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:16:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:17:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:18:00.163Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:19:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:20:00.198Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:21:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:22:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:23:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:24:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:25:00.168Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:26:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:27:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:28:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:29:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:30:00.202Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:31:00.214Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:32:00.155Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:33:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:34:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:35:00.301Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:36:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:37:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:38:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:39:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:40:00.216Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:41:00.155Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:42:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:43:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:44:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:45:00.209Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:46:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:47:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:48:00.257Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:49:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:50:00.207Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:51:00.213Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:52:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:53:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:54:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:55:00.199Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:56:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:57:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:58:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T21:59:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:00:00.251Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:01:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:02:00.168Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:03:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:04:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:05:00.194Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:06:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:07:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:08:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:09:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:10:00.175Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:11:00.204Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:12:00.157Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:13:00.157Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:14:00.178Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:15:00.279Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:16:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:17:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:18:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:19:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:20:00.219Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:21:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:22:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:23:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:24:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:25:00.250Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:26:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:27:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:28:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:29:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:30:00.209Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:31:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:32:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:33:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:34:00.414Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:35:00.471Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:36:00.387Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:37:00.409Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:38:00.399Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:39:00.555Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:40:00.649Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:41:00.571Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:42:00.433Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:43:00.618Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:44:00.834Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:45:00.926Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:46:00.256Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:47:00.173Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:48:00.172Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:49:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:50:00.237Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:50:00.752Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2025-01-21T22:51:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:52:00.170Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:53:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:54:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:55:00.214Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:56:00.171Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:57:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:58:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T22:59:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:00:00.231Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:01:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:02:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:03:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:04:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:05:00.308Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:06:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:07:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:08:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:09:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:10:00.202Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:11:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:12:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:13:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:14:00.162Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:15:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:16:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:17:00.158Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:18:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:19:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:20:00.213Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:21:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:22:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:23:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:24:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:25:00.249Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:26:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:27:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:28:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:29:00.172Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:30:00.195Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:31:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:32:00.171Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:33:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:34:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:35:00.192Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:36:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:37:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:38:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:39:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:40:00.190Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:41:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:42:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:43:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:44:00.164Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:45:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:46:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:47:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:48:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:49:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:50:00.203Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:51:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:52:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:53:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:54:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:55:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:56:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:57:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:58:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-21T23:59:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:00:00.243Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:01:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:02:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:03:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:04:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:05:00.203Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:06:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:07:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:08:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:09:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:10:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:11:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:12:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:13:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:14:00.121Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:15:00.196Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:16:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:17:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:18:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:19:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:20:00.192Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:21:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:22:00.164Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:23:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:24:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:25:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:26:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:27:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:28:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:29:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:30:00.176Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:31:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:32:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:33:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:34:00.152Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:35:00.170Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:36:00.118Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:37:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:38:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:39:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:40:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:41:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:42:00.123Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:43:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:44:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:45:00.333Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:46:00.485Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:47:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:48:00.407Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:49:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:50:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:51:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:52:00.362Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:53:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:54:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:55:00.176Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:56:00.124Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:57:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:58:00.155Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T00:59:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:00:00.232Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:01:00.170Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:02:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:03:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:04:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:05:00.175Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:06:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:07:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:08:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:09:00.198Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:10:00.244Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:11:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:12:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:13:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:14:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:15:00.202Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:16:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:17:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:18:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:19:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:20:00.180Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:21:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:22:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:23:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:24:00.162Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:25:00.204Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:26:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:27:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:28:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:29:00.251Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:30:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:31:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:32:00.163Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:33:00.190Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:34:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:35:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:36:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:37:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:38:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:39:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:40:00.277Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:41:00.134Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:42:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:43:00.197Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:44:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:45:00.205Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:46:00.141Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:47:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:48:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:49:00.241Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:50:00.200Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:51:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:52:00.165Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:53:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:54:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:55:00.198Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:56:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:57:00.244Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:58:00.159Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T01:59:00.300Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:00:00.214Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:01:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:02:00.143Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:03:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:04:00.235Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:05:00.241Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:06:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:07:00.137Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:08:00.160Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:09:00.138Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:10:00.182Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:11:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:12:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:13:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:14:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:15:00.211Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:16:00.167Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:17:00.405Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:18:00.135Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:19:00.195Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:20:00.238Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:21:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:22:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:23:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:24:00.142Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:25:00.222Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:26:00.163Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:27:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:28:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:29:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:30:00.178Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:31:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:32:00.218Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:33:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:34:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T02:59:22.499Z] (node:10984) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-22T03:00:00.757Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:01:00.553Z] Error checking Steam server status: AggregateError
+[2025-01-22T03:02:00.164Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:03:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:04:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:05:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:06:00.182Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:07:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:08:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:09:00.243Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:10:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:11:00.204Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:12:00.249Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:13:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:14:00.164Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:15:00.232Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:16:00.169Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:17:00.178Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:18:00.146Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:19:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:20:00.140Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:21:00.205Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:22:00.237Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:23:00.116Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:24:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:25:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:26:00.271Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:27:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:28:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:29:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:51:19.899Z] (node:12872) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-22T03:52:00.357Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:53:00.322Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:54:00.156Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:55:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:56:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:57:00.189Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:58:00.184Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T03:59:00.145Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:00:00.139Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:01:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:02:00.203Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:03:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:04:00.144Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:05:00.147Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:06:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:07:00.166Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:08:00.114Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:09:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:10:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:11:00.151Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:12:00.186Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:13:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:14:00.164Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:15:00.191Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:16:00.122Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:17:00.187Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:18:00.204Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:19:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:20:00.130Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:21:00.149Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:22:00.179Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:23:00.183Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:24:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:25:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:26:00.118Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:27:00.201Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:28:00.161Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:29:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:30:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:31:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:32:00.230Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:33:00.125Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:34:00.128Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:35:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:36:00.132Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:37:00.174Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:38:00.136Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:39:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:40:00.119Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:41:00.154Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:42:00.189Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:43:00.126Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:44:00.131Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:45:00.121Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:46:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:47:00.181Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:48:00.153Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:49:00.127Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:50:00.129Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:51:00.120Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:52:00.172Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:53:00.200Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:54:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:55:00.150Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:56:00.133Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:57:00.185Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:58:00.148Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T04:59:00.193Z] Error checking Steam server status: AxiosError: Request failed with status code 403
+[2025-01-22T13:08:54.069Z] (node:12872) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T06:25:35.768Z] (node:2344) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:25:39.455Z] Uncaught Exception: Error: EPIPE: broken pipe, write
+[2025-01-26T06:26:22.141Z] (node:9488) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:32:43.728Z] (node:25088) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:33:30.180Z] (node:25088) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T06:33:30.776Z] Error in uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T06:39:07.471Z] (node:16952) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:39:20.368Z] (node:16952) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T06:39:20.937Z] Error in uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T06:55:32.770Z] (node:23676) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:56:02.579Z] (node:23676) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T06:56:02.916Z] Error in uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T06:58:53.699Z] (node:19104) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T06:59:18.777Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T06:59:19.104Z] (node:19104) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T07:02:39.160Z] (node:16300) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:03:02.043Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:03:02.513Z] (node:16300) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T07:05:10.728Z] (node:7852) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:05:41.068Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:05:41.399Z] (node:7852) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T07:06:39.997Z] (node:17520) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:07:01.199Z] (node:17520) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T07:10:10.289Z] (node:14920) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:10:47.652Z] (node:18388) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:16:21.776Z] (node:23056) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:16:29.811Z] (node:23056) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T07:21:54.436Z] (node:12552) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:22:12.720Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:22:18.413Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:23:51.817Z] (node:23496) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:24:02.246Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:24:03.569Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:27:19.115Z] (node:16780) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:27:27.398Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:33:13.912Z] (node:21012) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:33:26.008Z] Error handling /uptime command: TypeError: Cannot read properties of undefined (reading 'uptime')
+[2025-01-26T07:33:26.016Z] Client error: TypeError: Cannot read properties of undefined (reading 'get')
+[2025-01-26T07:41:21.356Z] (node:18544) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:41:27.200Z] Client error: TypeError: Cannot read properties of undefined (reading 'get')
+[2025-01-26T07:42:07.954Z] Client error: TypeError: Cannot read properties of undefined (reading 'get')
+[2025-01-26T07:58:02.105Z] (node:6252) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T07:58:12.535Z] Client error: TypeError: commands.get is not a function
+[2025-01-26T08:05:06.038Z] (node:6976) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:05:16.658Z] Client error: TypeError: Cannot read properties of undefined (reading 'get')
+[2025-01-26T08:08:10.754Z] (node:18212) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:11:10.951Z] (node:18212) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T08:12:27.713Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:12:28.271Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:12:28.418Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:13:03.249Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:13:03.833Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:13:21.648Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:13:22.215Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:13:22.373Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:13:34.155Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:13:34.822Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:13:35.026Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:14:34.050Z] (node:7152) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:14:44.767Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:14:44.776Z] (node:7152) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T08:14:45.145Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:18:09.148Z] (node:20048) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:18:19.191Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:18:20.240Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:18:20.812Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:18:27.259Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:18:27.522Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:19:31.911Z] (node:18924) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:19:38.815Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:19:39.165Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:21:04.642Z] Client error: TypeError: Cannot read properties of null (reading 'id')
+[2025-01-26T08:23:32.234Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:23:32.799Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:23:32.988Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:25:21.300Z] (node:21648) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:27:51.103Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:27:51.694Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:33:18.005Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:33:18.571Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:33:27.824Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:33:28.090Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:34:56.463Z] (node:12176) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:35:11.681Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:35:11.814Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:35:15.678Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:35:15.770Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:35:15.982Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:35:21.082Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:35:21.336Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:35:21.497Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:35:28.530Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:35:28.776Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:35:28.973Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:37:32.017Z] (node:4544) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:38:00.939Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:38:01.259Z] (node:4544) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+[2025-01-26T08:38:01.504Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:39:08.861Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:39:09.377Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:39:41.894Z] (node:8920) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:39:56.882Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:39:57.127Z] Client error: DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:40:03.333Z] TypeError: Cannot read properties of undefined (reading 'slice')
+[2025-01-26T08:40:03.752Z] Error executing command: say DiscordAPIError[10062]: Unknown interaction
+[2025-01-26T08:40:03.910Z] Client error: DiscordAPIError[40060]: Interaction has already been acknowledged.
+[2025-01-26T08:41:36.730Z] (node:6444) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 messageCreate listeners added to [Client]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2025-01-26T08:41:40.817Z] Client error: TypeError: Cannot read properties of undefined (reading 'get')

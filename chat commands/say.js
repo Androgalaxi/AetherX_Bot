@@ -3,7 +3,8 @@ module.exports = {
     description: 'Repeats a user-provided message.', // Optional description
     execute: async (message) => {
         // Remove the command part "!say" and trim any whitespace
-        const sayMessage = message.content.slice('!say'.length).trim();
+        const prefix = '!say';
+        const sayMessage = message.content.slice(prefix.length).trim();
 
         // If no message was provided, prompt the user to provide one
         if (!sayMessage) {

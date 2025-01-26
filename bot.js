@@ -1,4 +1,4 @@
-// Load environment variables
++// Load environment variables
 require('dotenv').config();
 console.log('Bot token loaded:', process.env.DISCORD_TOKEN);
 
@@ -11,10 +11,21 @@ const EventEmitter = require('events');
 const chatCommands = new Map();
 const chatCommandFiles = fs.readdirSync(path.join(__dirname, 'chat commands')).filter(file => file.endsWith('.js'));
 
+// const commandMap = new Map();
+// const CommandFiles = fs.readdirSync(path.join(__dirname, 'commands')).filter(file => file.endsWith('.js'));
+
+const commandsPath = path.join(__dirname, 'commands');
+const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('.js'));
+
 for (const file of chatCommandFiles) {
     const command = require(`./chat commands/${file}`);
     chatCommands.set(command.name, command);
 }
+
+// for (const file of commandFiles) {
+//     const command = require(`./commands/${file}`);
+//     commandMap.set(command.name, command);
+// }
 
 // Import third-party libraries
 const { Client, GatewayIntentBits, Partials, ActivityType, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, ComponentType } = require('discord.js');
@@ -224,7 +235,7 @@ client.on('interactionCreate', async interaction => {
         } else if (commandName === 'ping') {
             await pingCommand.execute(interaction);
         } else if (commandName === 'uptime') {
-            await uptimeCommand.execute(interaction);
+            await uptimeCommand.execute(interaction, client);
         } else if (commandName === 'setstatus') {
             await setStatusCommand.execute(interaction);
         } else if (commandName === 'remind') {
@@ -238,7 +249,7 @@ client.on('interactionCreate', async interaction => {
         }
     } catch (error) {
         console.error(`Error executing command: ${commandName}`, error);
-        await interaction.reply({ content: 'There was an error executing this command.', ephemeral: true });
+        await interaction.reply({ content: 'There was an error executing this command.', flags: 64 });
     }
 });
 
@@ -266,6 +277,23 @@ schedule.scheduleJob({ dayOfWeek: 2, tz: 'America/New_York' }, async () => {
         }
     } catch (error) {
         console.error('Error checking Steam server status:', error);
+    }
+});
+
+client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return;
+
+    const command = client.commands.get(interaction.commandName);
+    if (!command) return;
+
+    try {
+        await command.execute(interaction, client); // Ensure client is passed here
+    } catch (error) {
+        console.error(error);
+        await interaction.reply({
+            content: 'There was an error executing this command.',
+            flags: 64,
+        });
     }
 });
 
@@ -1296,7 +1324,7 @@ async function startBlackjackGame(message) {
 
     collector.on('collect', async (buttonInteraction) => {
         if (buttonInteraction.user.id !== message.author.id) {
-            return buttonInteraction.reply({ content: 'This is not your game!', ephemeral: true });
+            return buttonInteraction.reply({ content: 'This is not your game!', flags: 64 });
             console.warn('Someone mean >:(');
         }
 
@@ -1465,7 +1493,7 @@ async function startHighLowGame(message) {
 
     collector.on('collect', async (buttonInteraction) => {
         if (buttonInteraction.user.id !== message.author.id) {
-            return buttonInteraction.reply({ content: 'This is not your game!', ephemeral: true });
+            return buttonInteraction.reply({ content: 'This is not your game!', flags: 64 });
         }
 
         const nextNumber = Math.floor(Math.random() * 100) + 1;

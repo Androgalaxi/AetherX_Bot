@@ -8,7 +8,7 @@ module.exports = {
         const allowedUsers = ['435125886996709377', '1286383453016686705', '1123769629165244497'];
 
         if (!allowedUsers.includes(interaction.user.id)) {
-            return interaction.reply({ content: "You don't have permission to use this command.", ephemeral: true });
+            return interaction.reply({ content: "You don't have permission to use this command.", flags: 64 });
         }
 
         await interaction.reply('Restarting bot...');

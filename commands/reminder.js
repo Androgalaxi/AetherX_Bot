@@ -35,18 +35,18 @@ module.exports = {
     const reminderTime = new Date(year, month - 1, day, hour, minute);
 
     if (isNaN(reminderTime.getTime())) {
-      return interaction.reply({ content: 'Invalid time format. Please use YYYY-MM-DD HH:MM.', ephemeral: true });
+      return interaction.reply({ content: 'Invalid time format. Please use YYYY-MM-DD HH:MM.', flags: 64 });
     }
 
     const now = Date.now();
     const timeUntilReminder = reminderTime.getTime() - now;
 
     if (timeUntilReminder <= 0) {
-      return interaction.reply({ content: 'The time must be in the future.', ephemeral: true });
+      return interaction.reply({ content: 'The time must be in the future.', flags: 64 });
     }
 
     // Acknowledge the reminder set
-    await interaction.reply({ content: `Reminder set for "${message}" at ${reminderTime.toLocaleString()}.`, ephemeral: true });
+    await interaction.reply({ content: `Reminder set for "${message}" at ${reminderTime.toLocaleString()}.`, flags: 64 });
 
     // Schedule the reminder
     setTimeout(async () => {

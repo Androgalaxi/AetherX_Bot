@@ -8,7 +8,7 @@ module.exports = {
 
     async execute(interaction) {
         const sent = Date.now();
-        await interaction.reply({ content: 'Pinging...', ephemeral: true }); // Makes the initial response ephemeral
+        await interaction.reply({ content: 'Pinging...', flags: 64 }); // Makes the initial response ephemeral
         const timeTaken = Date.now() - sent;
         await interaction.editReply({ content: `Pong! Latency is ${timeTaken}ms. API Latency is ${Math.round(interaction.client.ws.ping)}ms.` });
     },

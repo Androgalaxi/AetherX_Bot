@@ -32,7 +32,7 @@ module.exports = {
             console.error(error);
             await interaction.reply({ 
                 content: 'An error occurred while fetching the Truth or Dare question. Please try again later.', 
-                ephemeral: true 
+                flags: 64 
             });
         }
     }

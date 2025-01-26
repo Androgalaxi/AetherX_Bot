@@ -27,7 +27,7 @@ module.exports = {
         // Respond to the interaction
         await interaction.reply({
             content: `You are now AFK${message !== 'AFK' ? `: "${message}"` : ''}.`,
-            ephemeral: true,
+            flags: 64,
         });
     },
 };
